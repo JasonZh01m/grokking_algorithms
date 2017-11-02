@@ -3,6 +3,7 @@ import com.sun.javafx.scene.text.HitInfo;
 /**
  * Created by JasonZh on 2017/11/1.
  * 二分查找
+ * O(㏒n)
  */
 public class BinarySearch {
 
