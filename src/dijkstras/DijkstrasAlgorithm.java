@@ -7,7 +7,7 @@ import java.util.Map;
 
 /**
  * Created by JasonZh on 2017/11/3.
- * 狄克斯特拉算法
+ * 狄克斯特拉算法 (加权图中查找最短路径)
  */
 public class DijkstrasAlgorithm {
 
@@ -24,7 +24,7 @@ public class DijkstrasAlgorithm {
         String lowestCostNode = null;
 
         for (Map.Entry<String, Double> entry : costs.entrySet()) {
-            // 查找更便宜且没有处理过的节点
+            // 查找最便宜且没有处理过的节点
             if (lowestCost > entry.getValue() && !processed.contains(entry.getKey())) {
                 lowestCost = entry.getValue();
                 lowestCostNode = entry.getKey();

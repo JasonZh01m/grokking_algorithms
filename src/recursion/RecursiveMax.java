@@ -18,9 +18,19 @@ public class RecursiveMax {
         }
     }
 
+    private static int min(int[] arr) {
+        if (arr.length == 2) {
+            return arr[0] < arr[1] ? arr[0] : arr[1];
+        } else {
+            int subMin = min(Arrays.copyOfRange(arr, 1, arr.length));
+            return arr[0] < subMin ? arr[0] : subMin;
+        }
+    }
+
 
     public static void main(String[] args) {
-        System.out.println(max(new int[]{1, 5, 10, 25, 16, 1})); // 25
+        System.out.println(max(new int[]{26, 5, 10, 25, 16, 2})); // 26
+        System.out.println(min(new int[]{26, 5, 10, 25, 16, 2})); // 2
     }
 
 

@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * Created by JasonZh on 2017/11/3.
- * 图-广度优先算法
+ * 图-广度优先算法 （非加权图中查找最短路径）
  */
 public class BreadFirstSearch {
 
