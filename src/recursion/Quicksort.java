@@ -25,7 +25,7 @@ public class Quicksort {
             // recursive case
             Integer pivot = list.get(0);
 
-            // sub-arrays of all the elements less than the pivot
+            // JAVA8语法，Stream sub-arrays of all the elements less than the pivot
             List<Integer> lessList = list.stream().skip(1).filter(e -> e <= pivot).collect(Collectors.toList());
             List<Integer> greaterList = list.stream().skip(1).filter(e -> e > pivot).collect(Collectors.toList());
 
