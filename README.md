@@ -19,5 +19,6 @@
 ### 测试 feature 分支2
 ### 测试 feature 分支3
 
+### hotfix
 ### I'm master
 ### I'm master2
